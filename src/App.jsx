@@ -20,9 +20,9 @@ const App = () => {
       (choice === 'Paper' && choices[randomIndex] === 'Stone') ||
       (choice === 'Scissors' && choices[randomIndex] === 'Paper')
     ) {
-      setResult('You Win!');
+      setResult('You Win! ☺️');
     } else {
-      setResult('You Lose!');
+      setResult('You Lose! ☹️');
     }
   };
 
@@ -37,8 +37,8 @@ const App = () => {
         ))}
       </div>
       <div className="result">
-        <p>You picked: {userChoice}</p>
-        <p>Opponent picked: {computerChoice}</p>
+        <p>You picked : {userChoice}</p>
+        <p>Opponent picked : {computerChoice}</p>
         <p>{result}</p>
       </div>
     </div>
